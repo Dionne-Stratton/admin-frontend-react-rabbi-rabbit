@@ -18,6 +18,13 @@ const HeaderNav = () => {
           <NavLink className="main-nav" activeClassName="active" to="/add">
             Add
           </NavLink>
+          <NavLink
+            className="main-nav"
+            activeClassName="active"
+            to="/dangerzone"
+          >
+            Danger Zone
+          </NavLink>
         </nav>
       </header>
     </div>

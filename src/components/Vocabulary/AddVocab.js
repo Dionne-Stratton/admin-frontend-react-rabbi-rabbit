@@ -34,8 +34,8 @@ export default function AddVocab(props) {
   return (
     <div className="homepage">
       <div>
-        <h1>Add</h1>
-        <div className="formbox">
+        <h2>Add Vocab Word</h2>
+        <div className="viewForm">
           <form onSubmit={onSubmit}>
             <label> Hebrew: </label>
             <input
@@ -81,7 +81,12 @@ export default function AddVocab(props) {
               onChange={onchange}
             />
             <br />
-            <input id="submit" type="submit" value="Submit"></input>
+            <input
+              id="submit"
+              className="submit-button"
+              type="submit"
+              value="Add Vocab"
+            ></input>
           </form>
         </div>
       </div>

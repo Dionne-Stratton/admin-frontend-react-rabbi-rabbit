@@ -24,13 +24,13 @@ const DangerZone = () => {
   }
 
   return (
-    <div className="headernav">
-      <div className="text-box">
-        <h3>Welcome to the danger zone!</h3>
-        <button onClick={runSeeds}>Seed the database</button>
-        <p> Click on the "View" button to view the database. </p>
-        <p> Click on the "Add" button to add to the database. </p>
-      </div>
+    <div className="viewEdit">
+      <h3>Welcome to the danger zone!</h3>
+      <button onClick={runSeeds} className="submit-button">
+        Seed the database
+      </button>
+      <p> Click on the "View" button to view the database. </p>
+      <p> Click on the "Add" button to add to the database. </p>
     </div>
   );
 };
