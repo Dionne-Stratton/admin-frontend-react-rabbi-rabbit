@@ -4,14 +4,12 @@ import axios from "axios";
 import { testURL } from "../../BaseURLs";
 
 export default function EditVocab(props) {
-  const { vocab, setVocab } = props;
+  const { vocab } = props;
   const { id } = useParams();
-  // const liveURLwithID = `${testURL}/${id}`;
   const testURLwithID = `${testURL}/${id}`;
   const [item, setItem] = useState({});
   const [form, setForm] = useState({});
   const history = useHistory();
-  console.log("edit-vocab", vocab);
 
   useEffect(() => {
     if (vocab.length > 0) {

@@ -3,7 +3,6 @@ import axios from "axios";
 import { testURL } from "../../BaseURLs";
 
 export default function AddVocab(props) {
-  const { setVocab, vocab } = props;
   const initialForm = {
     hebrew: "",
     hebrew_with_nikkud: "",
