@@ -7,6 +7,7 @@ const ViewVocab = (props) => {
 
   const clearStyle = {
     textDecoration: "none",
+    color: "black",
   };
 
   return (
@@ -17,21 +18,14 @@ const ViewVocab = (props) => {
         return (
           <div className="aboutbox" key={vocabItem._id}>
             <div className="textbox">
-              <Link
-                to={`/${vocabItem._id}`}
-                className={"editButtons"}
-                style={clearStyle}
-              >
-                Edit/Delete
+              <Link to={`/${vocabItem._id}`} style={clearStyle}>
+                <p>Lesson: {vocabItem.lesson}</p>
+                <h4>{vocabItem.meaning}</h4>
+                <h4>{vocabItem.reading}</h4>
+                <h4>
+                  {vocabItem.hebrew_with_nikkud} / {vocabItem.hebrew}
+                </h4>
               </Link>
-              <p>ID: {vocabItem._id}</p>
-              <h3>{vocabItem.hebrew}</h3>
-              <h4>{vocabItem.hebrew_with_nikkud}</h4>
-              <p>
-                Meaning: {vocabItem.meaning} | Reading:{vocabItem.reading} |
-                Lesson:
-                {vocabItem.lesson}
-              </p>
             </div>
           </div>
         );

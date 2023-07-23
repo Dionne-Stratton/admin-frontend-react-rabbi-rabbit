@@ -4,6 +4,7 @@ import AddVocab from "./components/Vocabulary/AddVocab";
 import EditVocab from "./components/Vocabulary/EditVocab";
 import HeaderNav from "./components/HeaderNav";
 import View from "./components/Vocabulary/ViewVocab";
+import DangerZone from "./components/DangerZone";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { testURL } from "./BaseURLs";
@@ -21,6 +22,9 @@ function App() {
     <div className="App">
       <HeaderNav />
       <Switch>
+        <Route path="/dangerzone">
+          <DangerZone />
+        </Route>
         <Route path="/add">
           <AddVocab setVocab={setVocab} />
         </Route>

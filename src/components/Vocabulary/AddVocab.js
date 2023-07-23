@@ -1,21 +1,19 @@
 import React, { useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 import { testURL } from "../../BaseURLs";
 
 export default function AddVocab(props) {
   const { setVocab, vocab } = props;
-  const { id } = useParams();
   const initialForm = {
     hebrew: "",
     hebrew_with_nikkud: "",
-    meaning: "",
+    meaning: [],
     reading: "",
     lesson: 0,
+    gender: "",
   };
 
   const [form, setForm] = useState(initialForm);
-  const history = useHistory();
 
   const onchange = (e) => {
     e.preventDefault();
@@ -46,7 +44,7 @@ export default function AddVocab(props) {
               value={form.hebrew}
               onChange={onchange}
             />
-            <label> Hebrew no nikkud: </label>
+            <label> Nikkud: </label>
             <input
               type="text"
               name="hebrew_with_nikkud"
@@ -70,9 +68,16 @@ export default function AddVocab(props) {
             />
             <label> Lesson: </label>
             <input
-              type="text"
+              type="number"
               name="lesson"
               value={form.lesson}
+              onChange={onchange}
+            />
+            <label> Gender: </label>
+            <input
+              type="text"
+              name="gender"
+              value={form.gender}
               onChange={onchange}
             />
             <br />

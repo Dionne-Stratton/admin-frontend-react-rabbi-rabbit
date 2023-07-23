@@ -23,11 +23,11 @@ export default function EditVocab(props) {
         meaning: item.meaning,
         reading: item.reading,
         lesson: item.lesson,
+        gender: item.gender,
       });
     }
   }, [vocab, id]);
 
-  console.log("item", item);
   const onchange = (e) => {
     e.preventDefault();
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -57,8 +57,8 @@ export default function EditVocab(props) {
   return (
     <div className="homepage">
       <div>
-        <h1>Edit</h1>
-        <div className="formbox">
+        <h2>Edit</h2>
+        <div className="viewForm">
           <form onSubmit={onSubmit}>
             <label> Hebrew: </label>
             <input
@@ -67,7 +67,7 @@ export default function EditVocab(props) {
               value={form.hebrew}
               onChange={onchange}
             />
-            <label> Hebrew with nikkud: </label>
+            <label> Nikkud: </label>
             <input
               type="text"
               name="hebrew_with_nikkud"
@@ -96,21 +96,33 @@ export default function EditVocab(props) {
               value={form.lesson}
               onChange={onchange}
             />
-            <br />
-            <input id="submit" type="submit" value="Submit"></input>
+            <label> Gender: </label>
+            <input
+              type="text"
+              name="gender"
+              value={form.gender}
+              onChange={onchange}
+            />
+            <input
+              className="submit-button"
+              id="submit"
+              type="submit"
+              value="Submit Changes"
+            ></input>
           </form>
         </div>
-        <div className="aboutbox">
-          <div className="">
-            <br></br>
-            <p>
-              Hebrew:{item.hebrew} / hebrew_with_nikkud:{" "}
-              {item.hebrew_with_nikkud} <br></br> Reading: {item.reading} /
-              Meaning: {item.meaning} / Lesson: {item.lesson}
-            </p>
-            <button onClick={onDelete}>Delete Vocab Word</button>
-            <span> NOTE: this cannot be undone!</span>
-          </div>
+        <div className="viewEdit">
+          <p>
+            Hebrew:{item.hebrew} / Nikkud: {item.hebrew_with_nikkud} / Gender:{" "}
+            {item.gender}
+          </p>
+          <p>
+            Reading: {item.reading} / Meaning: {item.meaning} / Lesson:{" "}
+            {item.lesson}
+          </p>
+          <button className="delete-button" onClick={onDelete}>
+            Delete
+          </button>
         </div>
       </div>
     </div>
