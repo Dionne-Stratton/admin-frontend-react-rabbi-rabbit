@@ -1,193 +1,188 @@
 export const SeedVocab = [
   //should correspond to Pimsleur's Hebrew I, Unit 1, lesson 1 with the following keys all in lower case: vocab_level, hebrew, hebrew_with_nikkud,reading, meaning. the meaning key is an array of strings containing all the meanings of the word.
-  {
-    vocab_level: 1,
-    meaning: "hello, goodbye, peace",
-    hebrew: "שלום",
-    hebrewWithNikkud: "שָׁלוֹם",
-    reading: "shalom",
-    gender: "na",
+ {
+    lesson: 1,
+    hebrew: 'אני',
+    hebrewWithNikkud: 'אֲנִי',
+    reading: 'ani',
+    meaning: 'I',
+    gender: ''
   },
   {
-    vocab_level: 1,
-    meaning: "goodbye, see you",
-    hebrew: "להתראות",
-    hebrew_with_nikkud: "להתראות",
-    reading: "lehitraot",
-    gender: "na",
+    lesson: 1,
+    hebrew: 'אתה',
+    hebrewWithNikkud: 'אַתָּה',
+    reading: 'ata',
+    meaning: 'you',
+    gender: 'male'
   },
   {
-    vocab_level: 1,
-    meaning: "I",
-    hebrew: "אני",
-    hebrew_with_nikkud: "אני",
-    reading: "ani",
-    gender: "na",
+    lesson: 1,
+    hebrew: 'את',
+    hebrewWithNikkud: 'אַתְּ',
+    reading: 'at',
+    meaning: 'you',
+    gender: 'female'
   },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["my name is"],
-  //   hebrew: "שמי",
-  //   hebrew_with_nikkud: "שמי",
-  //   reading: "shmi",
-  //   gender: "na",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["what"],
-  //   hebrew: "מה",
-  //   hebrew_with_nikkud: "מה",
-  //   reading: "ma",
-  //   gender: "na",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["you (m)"],
-  //   hebrew: "אתה",
-  //   hebrew_with_nikkud: "אתה",
-  //   reading: "ata",
-  //   gender: "masculine",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["you (f)"],
-  //   hebrew: "את",
-  //   hebrew_with_nikkud: "את",
-  //   reading: "at",
-  //   gender: "feminine",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["what's your peace? (m)", "how are you? (m)"],
-  //   hebrew: "מה שלומך",
-  //   hebrew_with_nikkud: "מה שלומך",
-  //   reading: "ma shlomcha",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["what's your peace? (f)", "how are you? (f)"],
-  //   hebrew: "מה שלומך",
-  //   hebrew_with_nikkud: "מה שלומך",
-  //   reading: "ma shlomech",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["Hebrew"],
-  //   hebrew: "עברית",
-  //   hebrew_with_nikkud: "עברית",
-  //   reading: "ivrit",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["and"],
-  //   hebrew: "ו",
-  //   hebrew_with_nikkud: "ו",
-  //   reading: "ve",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["English"],
-  //   hebrew: "אנגלית",
-  //   hebrew_with_nikkud: "אנגלית",
-  //   reading: "anglit",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["excuse me"],
-  //   hebrew: "סליחה",
-  //   hebrew_with_nikkud: "סליחה",
-  //   reading: "slicha",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["American (m)"],
-  //   hebrew: "אמריקאי",
-  //   hebrew_with_nikkud: "אמריקאי",
-  //   reading: "amerikai",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["American (f)"],
-  //   hebrew: "אמריקאית",
-  //   hebrew_with_nikkud: "אמריקאית",
-  //   reading: "amerikait",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["Israeli (m)"],
-  //   hebrew: "ישראלי",
-  //   hebrew_with_nikkud: "ישראלי",
-  //   reading: "yisraeli",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["Israeli (f)"],
-  //   hebrew: "ישראלית",
-  //   hebrew_with_nikkud: "ישראלית",
-  //   reading: "yisraelit",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["no", "not"],
-  //   hebrew: "לא",
-  //   hebrew_with_nikkud: "לא",
-  //   reading: "lo",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["yes"],
-  //   hebrew: "כן",
-  //   hebrew_with_nikkud: "כן",
-  //   reading: "ken",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["thank you"],
-  //   hebrew: "תודה",
-  //   hebrew_with_nikkud: "תודה",
-  //   reading: "toda",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["very"],
-  //   hebrew: "מאוד",
-  //   hebrew_with_nikkud: "מאוד",
-  //   reading: "meod",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["well"],
-  //   hebrew: "טוב",
-  //   hebrew_with_nikkud: "טוב",
-  //   reading: "tov",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["a little"],
-  //   hebrew: "קצת",
-  //   hebrew_with_nikkud: "קצת",
-  //   reading: "ktsat",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["not so well"],
-  //   hebrew: "לא כל כך טוב",
-  //   hebrew_with_nikkud: "לא כל כך טוב",
-  //   reading: "lo kol kach tov",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["understand (m)"],
-  //   hebrew: "מבין",
-  //   hebrew_with_nikkud: "מבין",
-  //   reading: "mevin",
-  // },
-  // {
-  //   vocab_level: 1,
-  //   meaning: ["understand (f)"],
-  //   hebrew: "מבינה",
-  //   hebrew_with_nikkud: "מבינה",
-  //   reading: "mevina",
-  // },
-  //total 25 vocab words
+  {
+    lesson: 1,
+    hebrew: 'אינגלית',
+    hebrewWithNikkud: 'אֵינְגְּלִית',
+    reading: 'anglit',
+    meaning: 'English',
+    gender: ''
+  },
+  {
+    lesson: 1,
+    hebrew: 'מבינה',
+    hebrewWithNikkud: 'מְבִינָה',
+    reading: 'mevina',
+    meaning: 'understand',
+    gender: 'feminine'
+  },
+  {
+    lesson: 1,
+    hebrew: 'מבין',
+    hebrewWithNikkud: 'מְבִין',
+    reading: 'mevin',
+    meaning: 'understand',
+    gender: 'male'
+  },
+  {
+    lesson: 1,
+    hebrew: 'כן',
+    hebrewWithNikkud: 'כֵּן',
+    reading: 'ken',
+    meaning: 'yes',
+    gender: ''
+  },
+  {
+    lesson: 1,
+    hebrew: 'לא',
+    hebrewWithNikkud: 'לֹא',
+    reading: 'lo',
+    meaning: 'no',
+    gender: ''
+  },
+  {
+    lesson: 1,
+    hebrew: 'עברית',
+    hebrewWithNikkud: 'עִבְרִית',
+    reading: 'ivrit',
+    meaning: 'Hebrew',
+    gender: ''
+  },
+  {
+    lesson: 1,
+    hebrew: 'קצת',
+    hebrewWithNikkud: 'קְצָת',
+    reading: 'ktsat',
+    meaning: 'a little',
+    gender: ''
+  },
+  {
+    lesson: 1,
+    hebrew: 'אמריקאי',
+    hebrewWithNikkud: 'אָמֶרִיקָאִי',
+    reading: 'amerikai',
+    meaning: 'American',
+    gender: 'male'
+  },
+  {
+    lesson: 1,
+    hebrew: 'אמריקאית',
+    hebrewWithNikkud: 'אֲמֶרִיקָאִית',
+    reading: 'amerikait',
+    meaning: 'American',
+    gender: 'female'
+  },
+  {
+    lesson: 1,
+    hebrew: 'אתה מבין',
+    hebrewWithNikkud: 'אַתָּה מְבִין',
+    reading: 'ata mevin',
+    meaning: 'you understand',
+    gender: 'male'
+  },
+  {
+    lesson: 1,
+    hebrew: 'את מבינה',
+    hebrewWithNikkud: 'אַת מְבִינָה',
+    reading: 'at mevina',
+    meaning: 'you understand',
+    gender: 'female'
+  },
+  {
+    lesson: 1,
+    hebrew: 'אני מבין',
+    hebrewWithNikkud: 'אֲנִי מְבִין',
+    reading: 'ani mevin',
+    meaning: 'I understand',
+    gender: 'male'
+  },
+  {
+    lesson: 1,
+    hebrew: 'אני לא מבין עברית',
+    hebrewWithNikkud: 'אֲנִי לֹא מְבִין עִבְרִית',
+    reading: 'ani lo mevin ivrit',
+    meaning: "I don't understand Hebrew",
+    gender: 'male'
+  },
+  {
+    lesson: 1,
+    hebrew: 'אני מבין קצת עברית',
+    hebrewWithNikkud: 'אֲנִי מְבִין קְצָת עִבְרִית',
+    reading: 'ani mevin ktsat ivrit',
+    meaning: 'I understand a little Hebrew',
+    gender: 'male'
+  },
+  {
+    lesson: 1,
+    hebrew: 'סליחה, אתה מבין אינגלית?',
+    hebrewWithNikkud: 'סְלִיחָה, אַתָּה מְבִין אִינְגְּלִית?',
+    reading: 'slicha, ata mevin anglit?',
+    meaning: 'Excuse me, do you understand English?',
+    gender: 'male'
+  },
+  {
+    lesson: 1,
+    hebrew: 'סליחה, את מבינה אינגלית?',
+    hebrewWithNikkud: 'סְלִיחָה, אַת מְבִינָה אִינְגְּלִית?',
+    reading: 'slicha, at mevina anglit?',
+    meaning: 'Excuse me, do you understand English?',
+    gender: 'female'
+  },
+  {
+    lesson: 1,
+    hebrew: 'אתה אמריקאי?',
+    hebrewWithNikkud: 'אַתָּה אָמֶרִיקָאִי',
+    reading: 'ata amerikai?',
+    meaning: 'Are you American?',
+    gender: 'male'
+  },
+  {
+    lesson: 1,
+    hebrew: 'את אמריקאית?',
+    hebrewWithNikkud: 'אַת אָמֶרִיקָאִית',
+    reading: 'at amerikait?',
+    meaning: 'Are you American?',
+    gender: 'female'
+  },
+  {
+    lesson: 1,
+    hebrew: 'כן, אני אמריקאי',
+    hebrewWithNikkud: 'כֵּן, אֲנִי אָמֶרִיקָאִי',
+    reading: 'ken, ani amerikai',
+    meaning: "Yes, I'm American",
+    gender: 'male'
+  },
+  {
+    lesson: 1,
+    hebrew: 'כן, אני אמריקאית',
+    hebrewWithNikkud: 'כֵּן, אֲנִי אָמֶרִיקָאִית',
+    reading: 'ken, ani amerikait',
+    meaning: "Yes, I'm American",
+    gender: 'female'
+  }
+  
 ];
